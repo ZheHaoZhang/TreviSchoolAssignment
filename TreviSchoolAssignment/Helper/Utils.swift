@@ -14,6 +14,7 @@ class Utils: NSObject {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
+    
     public class func makeTimerSource(interval: DispatchTimeInterval, handler:@escaping () -> Void)
         -> DispatchSourceTimer {
             let result = DispatchSource.makeTimerSource(queue: DispatchQueue.global())

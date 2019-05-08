@@ -15,9 +15,6 @@ private let reuseIdentifier = "Cell"
 class CollectionViewController: UICollectionViewController {
 
     var disposeBag = DisposeBag()
-    var columnsCount: Int = 0
-    var rowsCount: Int = 0
-    var selectedIndex: IndexPath?
     var viewModel: CollectionViewModel!
     var columnDatas: [ColumnData] = []{
         didSet{
@@ -29,7 +26,7 @@ class CollectionViewController: UICollectionViewController {
     class func simpleCreation(viewModel: CollectionViewModel) -> CollectionViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CollectionViewController") as! CollectionViewController
-      vc.viewModel = viewModel
+        vc.viewModel = viewModel
         return vc
     }
     
@@ -98,10 +95,8 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewControllerCell
         let data = columnDatas[indexPath.row]
-        // Configure the cell
-        cell.setup(data: data)
+        cell.setup(dataModel: data)
         cell.doneButton.addTarget(self, action: #selector(self.btnAction(_:)), for: .touchUpInside)
-
         return cell
     }
     

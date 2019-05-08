@@ -17,15 +17,15 @@ class CollectionViewControllerCell: UICollectionViewCell {
     @IBOutlet weak var myStackView: UIStackView!
     var disposeBag = DisposeBag()
 
-    func setup(data: ColumnData){
-        data.isSelected.subscribe { (event) in
+    func setup(dataModel: ColumnData){
+        dataModel.isSelected.subscribe { (event) in
             let nextValue = event.element ?? false
             self.backgroundColor = nextValue ? UIColor.highlightGreen : UIColor.clear
             self.doneButton.backgroundColor = nextValue ? UIColor.highlightGreen : UIColor.clear
             self.doneButton.isEnabled = nextValue
         }.disposed(by: disposeBag)
         
-        for row in data.rows {
+        for row in dataModel.rows {
             let latticeView = LatticeView.init()
             latticeView.view1.backgroundColor = row.color1
             latticeView.view2.backgroundColor = row.color2

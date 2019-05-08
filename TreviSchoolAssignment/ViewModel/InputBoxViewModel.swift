@@ -17,7 +17,6 @@ class InputBoxViewModel {
     let rowValid: Observable<Bool>
     let everythingValid: Observable<Bool>
     
-    
     init(columnText: Reactive<UITextField>, rowText: Reactive<UITextField>) {
     
         columnValid = columnText.text.orEmpty
@@ -29,6 +28,5 @@ class InputBoxViewModel {
             .share(replay: 1)
         
         everythingValid = Observable.combineLatest(columnValid, rowValid) {$0 && $1}.share(replay: 1)
-    
     }
 }

@@ -27,8 +27,8 @@ class RowData {
 
     init(row: Int) {
         self.row = row
-        self.color1 = lightColors[(row-1)%3]
-        self.color2 = colors[(row-1)%3]
+        self.color1 = LatticeLightColors[(row-1)%3]
+        self.color2 = LatticeColors[(row-1)%3]
     }
 }
 

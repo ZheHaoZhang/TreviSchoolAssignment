@@ -37,7 +37,7 @@ class CollectionViewModel {
         self.columnsCount = columnsCount
         self.rowsCount = rowsCount
         self.createＣolumnData()
-        self.runRandom(interval: .milliseconds(10000))
+        self.runRandom(interval: .milliseconds(10000)) //Q3 Random 開始
     }
     
     deinit {
