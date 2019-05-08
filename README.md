@@ -15,7 +15,7 @@
 
 (限制條件: 題目2的畫面不可scroll)
 
-![Alt text](/Screenshots/ScreenShot1.jpg)
-![Alt text](/Screenshots/ScreenShot2.jpg)
-![Alt text](/Screenshots/ScreenShot3.jpg)
+![Alt text](/Screenshots/ScreenShot1.png)
+![Alt text](/Screenshots/ScreenShot2.png)
+![Alt text](/Screenshots/ScreenShot3.png)
 
