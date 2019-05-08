@@ -13,11 +13,17 @@
 		F35D67522281EC480086447C /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35D67512281EC480086447C /* Extensiones.swift */; };
 		F35D67552281F9CF0086447C /* ColumnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35D67542281F9CF0086447C /* ColumnData.swift */; };
 		F35D67572281FA7F0086447C /* CollectionViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35D67562281FA7F0086447C /* CollectionViewControllerCell.swift */; };
+		F369FB102282E62E004BDE59 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369FB0F2282E62E004BDE59 /* Color.swift */; };
 		F3C11F132281BB2400AF5E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C11F122281BB2400AF5E2E /* AppDelegate.swift */; };
 		F3C11F182281BB2400AF5E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C11F162281BB2400AF5E2E /* Main.storyboard */; };
 		F3C11F1A2281BB2900AF5E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C11F192281BB2900AF5E2E /* Assets.xcassets */; };
 		F3C11F1D2281BB2900AF5E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C11F1B2281BB2900AF5E2E /* LaunchScreen.storyboard */; };
 		F3C11F252281BB9600AF5E2E /* InputBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C11F242281BB9600AF5E2E /* InputBoxViewController.swift */; };
+		F3DD1090228289E10088331B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD108F228289E10088331B /* Utils.swift */; };
+		F3DD109222828BF60088331B /* LatticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109122828BF60088331B /* LatticeView.swift */; };
+		F3DD109422828C080088331B /* LatticeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DD109322828C080088331B /* LatticeView.xib */; };
+		F3DD109622828F7D0088331B /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109522828F7D0088331B /* NibView.swift */; };
+		F3DD1099228294680088331B /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD1098228294680088331B /* CollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,7 @@
 		F35D67512281EC480086447C /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
 		F35D67542281F9CF0086447C /* ColumnData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnData.swift; sourceTree = "<group>"; };
 		F35D67562281FA7F0086447C /* CollectionViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerCell.swift; sourceTree = "<group>"; };
+		F369FB0F2282E62E004BDE59 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F3C11F0F2281BB2400AF5E2E /* TreviSchoolAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreviSchoolAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C11F122281BB2400AF5E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C11F172281BB2400AF5E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +43,11 @@
 		F3C11F1C2281BB2900AF5E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3C11F1E2281BB2900AF5E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C11F242281BB9600AF5E2E /* InputBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBoxViewController.swift; sourceTree = "<group>"; };
+		F3DD108F228289E10088331B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F3DD109122828BF60088331B /* LatticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatticeView.swift; sourceTree = "<group>"; };
+		F3DD109322828C080088331B /* LatticeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatticeView.xib; sourceTree = "<group>"; };
+		F3DD109522828F7D0088331B /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		F3DD1098228294680088331B /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 				F3C11F242281BB9600AF5E2E /* InputBoxViewController.swift */,
 				F35D674F2281DA0F0086447C /* CollectionViewController.swift */,
 				F35D67562281FA7F0086447C /* CollectionViewControllerCell.swift */,
+				F3DD1097228291CD0088331B /* LatticeView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -82,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F35D674D2281D5110086447C /* InputBoxViewModel.swift */,
+				F3DD1098228294680088331B /* CollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -92,6 +106,17 @@
 				F35D67542281F9CF0086447C /* ColumnData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F37B364F2282D68500D9C39E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F35D67512281EC480086447C /* Extensiones.swift */,
+				F3DD108F228289E10088331B /* Utils.swift */,
+				F3DD109522828F7D0088331B /* NibView.swift */,
+				F369FB0F2282E62E004BDE59 /* Color.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		F3C11F062281BB2400AF5E2E = {
@@ -116,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F3C11F122281BB2400AF5E2E /* AppDelegate.swift */,
-				F35D67512281EC480086447C /* Extensiones.swift */,
+				F37B364F2282D68500D9C39E /* Helper */,
 				F35D67532281F9B30086447C /* Model */,
 				F35D674C2281D4F50086447C /* ViewModel */,
 				F35D674B2281D4DC0086447C /* View */,
@@ -125,6 +150,15 @@
 				F3C11F1E2281BB2900AF5E2E /* Info.plist */,
 			);
 			path = TreviSchoolAssignment;
+			sourceTree = "<group>";
+		};
+		F3DD1097228291CD0088331B /* LatticeView */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD109122828BF60088331B /* LatticeView.swift */,
+				F3DD109322828C080088331B /* LatticeView.xib */,
+			);
+			path = LatticeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C11F1D2281BB2900AF5E2E /* LaunchScreen.storyboard in Resources */,
+				F3DD109422828C080088331B /* LatticeView.xib in Resources */,
 				F3C11F1A2281BB2900AF5E2E /* Assets.xcassets in Resources */,
 				F3C11F182281BB2400AF5E2E /* Main.storyboard in Resources */,
 			);
@@ -247,9 +282,14 @@
 				F35D67502281DA0F0086447C /* CollectionViewController.swift in Sources */,
 				F35D67552281F9CF0086447C /* ColumnData.swift in Sources */,
 				F3C11F252281BB9600AF5E2E /* InputBoxViewController.swift in Sources */,
+				F3DD109622828F7D0088331B /* NibView.swift in Sources */,
+				F369FB102282E62E004BDE59 /* Color.swift in Sources */,
+				F3DD109222828BF60088331B /* LatticeView.swift in Sources */,
 				F3C11F132281BB2400AF5E2E /* AppDelegate.swift in Sources */,
+				F3DD1099228294680088331B /* CollectionViewModel.swift in Sources */,
 				F35D67522281EC480086447C /* Extensiones.swift in Sources */,
 				F35D674E2281D5110086447C /* InputBoxViewModel.swift in Sources */,
+				F3DD1090228289E10088331B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

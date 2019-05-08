@@ -27,6 +27,7 @@ class InputBoxViewController: UIViewController {
         super.viewDidLoad()
         self.setupRx()
     }
+    
     func setupRx() {
         
         viewModel.columnValid
@@ -43,7 +44,6 @@ class InputBoxViewController: UIViewController {
             self.nextButton.backgroundColor = nextValue ? UIColor.blue : UIColor.darkGray
             }.disposed(by: disposeBag)
         
-        
         nextButton.rx.tap
             .subscribe(onNext: {
                 print("button Tapped")
@@ -55,18 +55,7 @@ class InputBoxViewController: UIViewController {
     func goToCollectionViewController() {
         let columnsCount = Int(columnTextField.text!)!
         let rowsCount = Int(rowTextField.text!)!
-
-        let vc = CollectionViewController.simpleCreation(columnsCount:columnsCount , rowsCount: rowsCount)
+        let vc = CollectionViewController.simpleCreation(viewModel: CollectionViewModel.init(columnsCount: columnsCount, rowsCount: rowsCount))
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

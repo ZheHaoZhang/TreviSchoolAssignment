@@ -9,13 +9,29 @@
 import UIKit
 import RxSwift
 
-struct ColumnData {
-    let column: Int
-    let rows: row
-    let isSelected: Observable<Bool>
-}
-struct row {
-    let row: Int
-    let isSelected: Observable<Bool>
+class ColumnData {
+    var column: Int = 0
+    var rows: [RowData] = []
+    let isSelected = BehaviorSubject(value: false)
 
+    init(column: Int) {
+        self.column = column
+    }
 }
+class RowData {
+    var row: Int = 0
+    var titel = "random"
+    var color1 = UIColor.lightGray
+    var color2 = UIColor.darkGray
+    let isSelected = BehaviorSubject(value: false)
+
+    init(row: Int) {
+        self.row = row
+        self.color1 = lightColors[(row-1)%3]
+        self.color2 = colors[(row-1)%3]
+    }
+}
+
+
+
+
