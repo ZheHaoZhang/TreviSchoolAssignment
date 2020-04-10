@@ -56,10 +56,8 @@ class CollectionViewModel {
     }
     
     private func runRandom(interval: DispatchTimeInterval)  {
-        self.timer = Utils.makeTimerSource(interval: interval) {
-            let sdad = self.getHighlightPosition()
-            print(sdad)
-            self.highlightSubject = sdad
+        self.timer = Utils.makeTimerSource(interval: interval) {[weak self] in
+            self?.highlightSubject = self?.getHighlightPosition()
         }
     }
     
